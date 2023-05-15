@@ -39,7 +39,7 @@ position: fixed;
 .about {
     color:rgb(242, 121, 59);
     font-size: x-large;
-    font-weight:900;
+    /* font-weight:900; */
 }
 
 .fade-text {
@@ -47,7 +47,7 @@ position: fixed;
      /* opacity: 1; */
      color: rgb(242, 121, 59);
      /* transition: opacity 1.5s ease-in-out; */
-     animation: fade-text 3s ease-in forwards;
+     animation: fade-text 2s ease-in forwards;
      /* Start with an opacity of 0 to make the text invisible */
  }
 
@@ -60,3 +60,41 @@ position: fixed;
          opacity: 1;
      }
  }
+
+ @font-face {
+     font-family: SourceCodePro;
+     src: url(SourceCodePro-MediumIt.otf) format('truetype');
+ }
+ /* typing effect */
+ .typing  {
+    padding: 5em;
+    color: #fff;
+    font-family: SourceCodePro;
+    font-size: 3vw;
+    overflow: hidden;
+    color: rgb(242, 121, 59);
+     /* Ensures the content is not revealed until the animation */
+     /* border-right: .15em solid orange; */
+     /* The typwriter cursor */
+     white-space: nowrap;
+     /* Keeps the content on a single line */
+     /* margin: 0 auto; */
+     /* Gives that scrolling effect as the typing happens */
+     /* letter-spacing: 10px; */
+     /* Adjust as needed */
+     animation:
+         typing 3.5s steps(600, end),
+         blink-caret .10s step-end ;
+ }
+
+ /* The typing effect */
+ @keyframes typing {
+     from {
+         width: 0
+     }
+
+     to {
+         width: 100%;
+     }
+ }
+
