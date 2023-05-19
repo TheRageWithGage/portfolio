@@ -59,11 +59,18 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: between;
+    /* overflow-y: hidden; */
+    /* scrollbar-width: none; */
+        /* Hide vertical scrollbar */
+    /* overflow: hidden; */
     /* padding: 0 5rem; */
     /* background-color: rgba(48, 158, 14, 0.957); */
     animation: fade-in 3s ease-in forwards;
     top: 0;
     left: 0;
+}
+body::-webkit-scrollbar {
+    display: none;
 }
 
 .container {
