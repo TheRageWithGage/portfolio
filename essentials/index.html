@@ -20,14 +20,30 @@
 		
 		<div class="fade-text">
 				<div class="typing">
-					<h3>I'm Gage,<br> a front end developer</h3>
+					<h3>I'm Gage,<br> a <span class="type"></span></h3>
 				</div>
 			</div>
 			
-			
-			
 		</div>
+
+		
 	</div>
-	<script src="script.js"></script>
+	<!-- <script src="typed.js"></script> -->
+	<script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+	<script>
+		var typed = new Typed('.type', {
+			strings: [
+				'Frontend Deveoloper',
+				'Lover ;)',
+				'Coomer'
+			],
+			typeSpeed: 60,
+			backSpeed: 60,
+			loop: true,
+			smartBackspace: true 
+
+		})
+	</script>
+	<!-- <script src="script.js"></script> -->
 </body>
 </html>

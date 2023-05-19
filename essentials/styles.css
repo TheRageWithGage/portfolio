@@ -142,6 +142,11 @@ html, body {
 
  }
 
+ .type {
+    color: orange;
+    background-color: rgba(48, 63, 146, 0.192);
+ }
+
  /* The typing effect */
  @keyframes typing {
      from {
