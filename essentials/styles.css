@@ -38,6 +38,7 @@ nav ul li a {
 
 nav ul li a:hover {
     background-color: rgba(94, 15, 185, 0.208);
+    color: rgb(235, 119, 18);
     /* Darker background color on hover */
 }
 
@@ -161,7 +162,7 @@ body {
  }
 
  .type {
-    color: rgb(185, 92, 10);
+    color: rgb(235, 119, 18);
     background-color: rgba(48, 63, 146, 0.192);
     padding: .25em;
     border-radius: 50px;
@@ -181,7 +182,7 @@ body {
         height: 8em;
         background-color: #1f2937;
         /* font-size: small; */
-        padding: 2em;
+        padding: 3em;
         margin: 2em;
         /* Dark navy */
         margin-right: 20px;
@@ -190,6 +191,10 @@ body {
         transition: all .2s ease-in-out;
  }
 
+.bullets {
+    list-style-type: none;
+    color: rgb(235, 119, 18);
+}
 
 
  .skills:hover {
