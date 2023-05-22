@@ -59,6 +59,7 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: between;
+    
     /* overflow-y: hidden; */
     /* scrollbar-width: none; */
         /* Hide vertical scrollbar */
@@ -194,7 +195,6 @@ body::-webkit-scrollbar {
         /* Dark navy */
         margin-right: 20px;
         border-radius: 20px;
-        /* text-align: center; */
         transition: all .2s ease-in-out;
  }
 
@@ -207,3 +207,90 @@ body::-webkit-scrollbar {
  .skills:hover {
      transform: scale(1.1);
  }
+
+ /* the notecard change */
+        .notecard-container {
+            display: flex;
+                justify-content: center;
+                align-items: center;
+                /* height: 100vh; */
+                margin: 0;
+                font-size: 2vw;
+        }
+    
+        .notecard {
+            width: 10em;
+            height: 10em;
+            perspective: 1000px;
+            margin: 10px;
+            transition: transform 0.4s;
+            padding: 2em;
+        }
+        
+        .notecard:hover {
+            transform: translateY(-20px);
+        }
+        
+        .notecard-inner {
+            position: relative;
+            width: 100%;
+            height: 100%;
+                            transition: transform 1s;
+                            transform-style: preserve-3d;
+                            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+                            border-radius: 10px;
+                        }
+                        
+                        .notecard:hover .notecard-inner {
+                            transform: rotateY(180deg) scale(1);
+                        }
+                        
+                        .notecard-front,
+                        .notecard-back {
+                            position: absolute;
+                            width: 100%;
+                            height: 100%;
+                            backface-visibility: hidden;
+                            border-radius: 10px;
+                        }
+        .notecard-front {
+            /* background-color: #FFD700; */
+            background-color: #1f2937;
+                            
+            /* color: #fffbfb; */
+            color: rgb(235, 119, 18);
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+        }
+    
+        .notecard-back {
+            /* display: flex; */
+            background-color: rgb(3, 37, 50);
+            font-size: medium;
+            color: #FFF;
+            transform: rotateY(180deg);
+            /* flex-direction: column; */
+            justify-content: left;
+            /* align-items: center; */
+            padding: 20px;
+        }
+
+            .notecard h2 {
+                margin-top: 0;
+                margin-bottom: 10px;
+            }
+            
+            .notecard p {
+                margin: 0;
+            }
+            
+            .notecard:hover {
+                cursor: -webkit-grab;
+            }
+            
+            .notecard-inner {
+                transform-origin: center;
+            }
