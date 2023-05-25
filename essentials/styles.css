@@ -294,3 +294,8 @@ body::-webkit-scrollbar {
             .notecard-inner {
                 transform-origin: center;
             }
+
+            .partyGageProfile {
+            display: flex;
+                justify-content: center;
+                align-items: center;
