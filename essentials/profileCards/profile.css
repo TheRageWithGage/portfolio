@@ -1,0 +1,193 @@
+.container {
+    /* display: flex; */
+    /* flex-wrap: wrap; */
+    display: grid;
+    grid-template-columns: auto auto auto;
+    justify-content: center;
+    align-items: center;
+}
+
+.box {
+    width:20em;
+    height: 20em;
+    background-color: lightgray;
+    margin: 15px;
+    border-radius: 5px;
+    /* width: calc(100% / 3); */
+    /* flex-grow: 1; */
+}
+
+.basic-card {
+    background-image: url("cascade-mountains-range-USMNTNS0720-db9bdf21ee2e47b1868232c551c01006.jpg");
+    width: 20em;
+    height: 20em;
+    margin: 15px;
+    border-radius: 5px;
+    background-color: RGBA(255, 255, 255, 0.8);
+    color: white;
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    
+    
+    /* backdrop-filter: blur(5px);  */
+    /* padding: 2em; */
+    /* -webkit-filter: blur(5px); */
+    /* -moz-filter: blur(15px); */
+    /* -o-filter: blur(15px); */
+    /* backdrop-filter: url("cascade-mountains-range-USMNTNS0720-db9bdf21ee2e47b1868232c551c01006.jpg") blur(5px) saturate(150%); */
+    /* pointer-events: none; */
+    /* transform: scale(1); */
+    /* border-color: red; */
+    /* background-repeat: no-repeat; */
+    /* backdrop-filter: blur(10px); */
+    /* background-color: lightgray; */
+    /* background-size: cover; */
+        /* box-sizing: border-box; */
+    /* -webkit-filter: blur(8px); */
+    
+}
+
+.basic-info {
+    width: 100%;
+    height: 100%;
+    backdrop-filter:blur(15px);
+    font-size: 48px;
+    justify-content: center;
+    align-items:center;
+    /* background-color: rgb(255 255 255 / .5); */
+    /* display:flex; */
+    /* color: black; */
+    /* border-radius: 50%; */
+    /* width:2em; */
+    /* height:2em; */
+    /* background-color: black; */
+}
+
+.backdrop-filter {
+    background: rgb(255 255 255 / 0.5);
+    padding: 1rem;
+    backdrop-filter: blur(3px);
+}
+
+/* The socials */
+.social {
+    display: flex;
+    color: white;
+    justify-content: center;
+    align-items: center;
+    margin: 15px;
+    font-size: 20px;
+}
+
+.social2 {
+    color:#6AB04C;
+    justify-content: center;
+    margin-left: 1em;
+    /* align-items: centerss; */
+    /* display: flex; */
+    font-size: 20px;
+}
+
+.social3 {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    font-size: 20p
+}
+
+.social4 {
+    justify-content: center;
+        align-items: center;
+        display: flex;
+        font-size: 20px;
+        color:#D90BE1;
+        /* margin-bottom: 50px; */
+}
+
+.social-card {
+    width: 20em;
+    height: 20em;
+    background-color: white;
+    margin: 15px;
+    border-radius: 5px;
+    border: 1px solid black;
+}
+
+.inner-card {
+        background-image: url("0x0.jpg");
+        height:8em;
+        background-position: center;
+        
+}
+
+.designer {
+    position: relative;
+    width: 20em;
+    height: 20em;
+    background-color: lightgray;
+    margin: 15px;
+    border-radius: 10px;
+    z-index: 2;
+    
+
+}
+
+.designer-inner {
+    width:20em;
+    height:10em;
+    background-image: url("istockphoto-517188688-612x612.jpg");
+    background-position: center;
+    background-size: cover;
+    border-radius: 10px 10px 0px 0px;
+    clip-path: polygon(0 0, 0% 100%, 200% 0);
+    position: absolute;
+    top: 0;
+    z-index: -1;
+    /* margin-top: 21em; */
+    /* border-radius: 50%; */
+}
+
+.frat {
+    width: 20em;
+    height: 20em;
+    background-color: white;
+    margin: 15px;
+    border-radius: 5px;
+    border: 1px solid black;
+}
+
+.inner-frat {
+    width: 20em;
+    /* height: 10em; */
+    background-image: url("party.jpg");
+    height: 8em;
+    background-position: center;
+    align-items: center;
+    text-align:center;
+}
+
+.outer-baby {
+    width: 20em;
+    height: 20em;
+    background-color: white;
+    margin: 15px;
+    border-radius: 5px;
+    border: 1px solid black;
+}
+
+.inner-baby {
+    /* background-image: url("icons8-airplane-64.png");
+    width: 15em;
+    height: 12em;
+    background-position: center;
+    align-items: center;
+    border-radius: 10px 10px 10px 10px; */
+}
+
+.text {
+    /* text-align: center; */
+    margin-left: 25px;
+}
